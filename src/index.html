@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8" />
+    <title>Chest Down App</title>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+
+    <section id="generalContain">
+    <header>Push Ups Counter</header>
+
+    <nav id="mentions">
+      <p>Total: <span id="total-counter">0</span></p>
+      <p>Max in a row: <span id="max-in-row-counter">0</span></p>
+    </nav>
+
+    <main id="counter-container">
+      <button id="chest-down-btn" onclick="incrementCounter()">
+        Chest Down
+      </button>
+    </main>
+
+    <section id="done">
+      <button id="done-btn" onclick="registerPushups()">Done</button>
+    </section>
+    </section>
+
+    <script src="index.js" type="module"></script>
+  </body>
+</html>
