@@ -1,6 +1,5 @@
 let totalCounter = 0;
 let maxInRowCounter = 0;
-let maxInDayCounter = 0;
 
 function incrementCounter() {
   const counter = document.getElementById("chest-down-btn");
@@ -17,7 +16,6 @@ function registerPushups() {
   const counter = document.getElementById("chest-down-btn");
   const totalCounterSpan = document.getElementById("total-counter");
   const maxInRowCounterSpan = document.getElementById("max-in-row-counter");
-  const maxInDayCounterSpan = document.getElementById("max-in-day-counter");
 
   const currentValue = parseInt(counter.innerText);
   totalCounter += currentValue;
@@ -26,11 +24,8 @@ function registerPushups() {
     maxInRowCounter = currentValue;
   }
 
-  maxInDayCounter += currentValue;
-
   totalCounterSpan.innerText = totalCounter.toString();
   maxInRowCounterSpan.innerText = maxInRowCounter.toString();
-  maxInDayCounterSpan.innerText = maxInDayCounter.toString();
   counter.innerText = "Chest Down";
 }
 
